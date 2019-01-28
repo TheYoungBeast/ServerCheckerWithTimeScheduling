@@ -21,9 +21,9 @@ struct server_data
 		std::conjunction<
 			std::disjunction<
 				std::is_same< typename T::first_type, std::string >,
-				std::is_same< typename T::first_type, const char* >		>,		// !std::disjunction
+				std::is_same< typename T::first_type, const char* >		>,	// !std::disjunction
 				std::is_same< typename T::second_type, unsigned >>::value >		// !std::conjunction::value
-	>																			// !std::enable_if::type
+	>												// !std::enable_if::type							
 	server_data(T t_data) : ip(t_data.first), port(t_data.second)
 	{};
 };
@@ -81,9 +81,8 @@ public:
 		return client->get_status();
 	};
 
-	auto get_result() const -> const std::list<result_data>& {
-		return result;
-	}
+	auto get_result() const -> const std::list<result_data>&	{
+		return result;						}
 
 private:
 	tcp_client client;
