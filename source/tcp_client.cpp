@@ -24,7 +24,7 @@ void tcp_client::connect(const std::string& address, const unsigned port)
 }
 
 bool tcp_client::get_status() const	{
-	return m_status;				}
+	return m_status;		}
 
 const std::string tcp_client::error_message() const	{
-	return m_errormsg;								}
+	return m_errormsg;				}
