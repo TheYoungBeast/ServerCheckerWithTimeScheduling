@@ -2,12 +2,12 @@
 #include "base64.h"
 
 void mail_report::set_email_header(const StrVec& t_header)	{
-	m_message = t_header;									}
+	m_message = t_header;					}
 
 void mail_report::set_email_message(const std::string& t_message)	{
-	m_email_body = t_message;										}
+	m_email_body = t_message;					}
 
-bool mail_report::parse_header_template()						{
+bool mail_report::parse_header_template()				{
 	return mail_report::parse_header_template(EmailParseKeys);	}
 
 bool mail_report::parse_header_template(const m_map& t_ParseKeys)
