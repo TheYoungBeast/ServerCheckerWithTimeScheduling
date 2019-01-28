@@ -1,0 +1,9 @@
+Date: +0000
+To: %TO% %TO_ADDRESS%
+From: %FROM% %FROM_ADDRESS%
+Cc: %CC% %CC_ADDRESS%
+Subject: Service Downtime Detected
+Mime-version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
