@@ -47,7 +47,7 @@ class mail_report
 		std::string m_email_body;
 
 		const std::string smtp_server_url		= "smtp.wp.pl";
-		const std::string system_mail_address	= "<notification_system@wp.pl>";
+		const std::string system_mail_address		= "<notification_system@wp.pl>";
 		const std::string system_mail_data		= "GitProject S.A.";
 		const std::string system_password		= "notification1133";
 		const std::string system_username		= "notification_system@wp.pl";
@@ -57,11 +57,11 @@ class mail_report
 
 		const std::unordered_map<std::string, std::reference_wrapper<const std::string>> EmailParseKeys =
 		{
-			std::pair< const std::string, std::reference_wrapper<const std::string> >("%TO%"			, user_mail_data),
+			std::pair< const std::string, std::reference_wrapper<const std::string> >("%TO%"		, user_mail_data),
 			std::pair< const std::string, std::reference_wrapper<const std::string> >("%TO_ADDRESS%"	, user_mail_address),
-			std::pair< const std::string, std::reference_wrapper<const std::string> >("%FROM%"			, system_mail_data),
+			std::pair< const std::string, std::reference_wrapper<const std::string> >("%FROM%"		, system_mail_data),
 			std::pair< const std::string, std::reference_wrapper<const std::string> >("%FROM_ADDRESS%"	, system_mail_address),
-			std::pair< const std::string, std::reference_wrapper<const std::string> >("%CC%"			, user_mail_data),
+			std::pair< const std::string, std::reference_wrapper<const std::string> >("%CC%"		, user_mail_data),
 			std::pair< const std::string, std::reference_wrapper<const std::string> >("%CC_ADDRESS%"	, user_cc_address)
 		};
 };
